@@ -50,24 +50,24 @@ document.getElementById("signup-form").addEventListener("submit", function (even
 
     const username = document.querySelector('input[name="username"]').value;
     const email = document.querySelector('input[name="email"]').value;
-    const password = document.querySelector('input[name="password"]').value.trim(); 
-    const confirmPassword = document.querySelector('input[name="confirmpassword"]').value.trim(); 
+    console.log("Password:", document.querySelector('input[name="password"]').value);
+    console.log("Confirm Password:", document.querySelector('input[name="confirmpassword"]').value);
 
+
+
+    console.log("Password: ", password);
+    console.log("Confirm Password: ", confirmPassword);
 
     if (password !== confirmPassword) {
         alert("Passwords do not match!");
         return;
     }
 
-   
     setCookie("username", username, 7);
     setCookie("email", email, 7);
     setCookie("password", password, 7);
 
-    
     alert("Account created successfully!");
-    
-    
 });
 
 
