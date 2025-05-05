@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Museum</title>
     <link rel="stylesheet" href="artifacts.css">
+    <style>
+        /* Add minimal styles for hamburger and mobile nav */
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        #mobile-nav {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            #mobile-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                padding: 60px 20px;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+                transition: right 0.3s ease-in-out;
+                z-index: 999;
+            }
+
+            #mobile-nav.open {
+                right: 0;
+            }
+
+            #mobile-nav ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            #mobile-nav li {
+                margin-bottom: 20px;
+            }
+
+            #mobile-nav a {
+                color: #333;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,7 +73,23 @@
                 <h1>TIMELESS TREASURES</h1>
             </div>
         </div>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <!-- Desktop Nav -->
         <nav>
+            <ul>
+                <li><a href="home.html" class="home-link">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="artifacts.html" class="artifacts-link">Gallery</a></li>
+                <li><a href="mindanao.html">Mindanao</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Nav Sidebar -->
+        <nav id="mobile-nav">
             <ul>
                 <li><a href="home.html" class="home-link">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -46,7 +119,7 @@
                 <a href="boats.html">
                     <img src="photos/balangay.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
-                        <h3>Wooden Boats</h3>
+                        <h3>Balangay</h3>
                         <p>Origin: Butuan, Agusan del Norte, Southern Mindanao</p>
                     </div>
                 </a>
@@ -62,16 +135,16 @@
             </div>
             <div class="gallery-item">
                 <a href="jar.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/jar2.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
-                        <h3>Ancient Jar</h3>
+                        <h3>Ancient Burial Jar</h3>
                         <p>Origin: Zamboanga del Sur</p>
                     </div>
                 </a>
             </div>
             <div class="gallery-item">
                 <a href="baskets.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/woven0.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Woven Baskets</h3>
                         <p>Origin: Davao del Norte</p>
@@ -80,7 +153,7 @@
             </div>
             <div class="gallery-item">
                 <a href="handcarved.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/hand1.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Hand-carved Figures</h3>
                         <p>Origin: Surigao del Sur</p>
@@ -88,8 +161,8 @@
                 </a>
             </div>
             <div class="gallery-item">
-                <a href="stone.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                <a href="tablets.html">
+                    <img src="photos/tablet2.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Stone Tablets</h3>
                         <p>Origin: Tawi-Tawi</p>
@@ -98,7 +171,7 @@
             </div>
             <div class="gallery-item">
                 <a href="masks.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/mask2.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Ethnic Masks</h3>
                         <p>Origin: Zamboanga del Norte</p>
@@ -107,7 +180,7 @@
             </div>
             <div class="gallery-item">
                 <a href="pottery.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/pot2.jpeg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Folk Pottery</h3>
                         <p>Origin: Bukidnon</p>
@@ -116,7 +189,7 @@
             </div>
             <div class="gallery-item">
                 <a href="ritualtools.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/tool2.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Ritual Tools</h3>
                         <p>Origin: Cotabato</p>
@@ -125,7 +198,7 @@
             </div>
             <div class="gallery-item">
                 <a href="sculpture.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/sculp2.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Carved Wood Sculptures</h3>
                         <p>Origin: Davao Oriental</p>
@@ -134,7 +207,7 @@
             </div>
             <div class="gallery-item">
                 <a href="jewelry.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/jewel2.webp" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Beaded Jewelry</h3>
                         <p>Origin: Palawan</p>
@@ -143,7 +216,7 @@
             </div>
             <div class="gallery-item">
                 <a href="spears.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/weapon2.png" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Ancient Spears</h3>
                         <p>Origin: Maguindanao</p>
@@ -152,7 +225,7 @@
             </div>
             <div class="gallery-item">
                 <a href="quilts.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/quilt2.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Traditional Quilts</h3>
                         <p>Origin: Sulu</p>
@@ -161,7 +234,7 @@
             </div>
             <div class="gallery-item">
                 <a href="handwoven.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/mats2.jpeg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Handwoven Mats</h3>
                         <p>Origin: Basilan</p>
@@ -170,16 +243,7 @@
             </div>
             <div class="gallery-item">
                 <a href="weapons.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
-                    <div class="gallery-overlay">
-                        <h3>Historical Weapons</h3>
-                        <p>Origin: Agusan del Sur</p>
-                    </div>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="weapons.html">
-                    <img src="photos/durian.jpg" alt="Art Photo">
+                    <img src="photos/weap2.jpg" alt="Art Photo">
                     <div class="gallery-overlay">
                         <h3>Historical Weapons</h3>
                         <p>Origin: Agusan del Sur</p>
@@ -188,7 +252,6 @@
             </div>
         </div>
     </section>
-    
 
     <footer>
         <div class="footer-container">
@@ -200,6 +263,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("hamburger").addEventListener("click", function () {
+            const mobileNav = document.getElementById("mobile-nav");
+            mobileNav.classList.toggle("open");
+        });
+    </script>
     
 
 </body>

@@ -32,6 +32,63 @@ header {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    #mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 80px 20px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+        transition: right 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    #mobile-nav.open {
+        right: 0;
+    }
+
+    #mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #mobile-nav ul li {
+        margin-bottom: 25px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    #mobile-nav ul li a {
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        display: block;
+        transition: color 0.2s ease;
+    }
+
+    #mobile-nav ul li a:hover {
+        color: #FF6347;
+    }
+}
+
+
 
 .logo-container {
     display: flex;
@@ -71,17 +128,16 @@ nav ul li a {
 }
 
 
+nav ul li a:hover {
+    color: #FF6347;
+}
+
 .artifacts-link {
-    color: #FF6347; 
+    color: #FF6347;
 }
 
 .artifacts-link:hover {
-    color: #FF8C00; 
-}
-
-
-nav ul li a:hover {
-    color: #9e5008;  
+    color: #FF8C00;
 }
 
 
