@@ -1,4 +1,3 @@
-/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;  /* Set the body background to black */
-    color: #fff;  /* White text color */
+    background-color: #000;
+    color: #fff;
 }
 
-/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -24,26 +22,22 @@ header {
     z-index: 10;
 }
 
-/* Logo and text container */
 .logo-container {
     display: flex;
     align-items: center;
 }
 
-/* Styling for the logo */
 .logo img {
     height: 50px;
-    margin-right: 15px; /* Space between the logo and the text */
+    margin-right: 15px;
 }
 
-/* Styling for the logo text */
 .logo-text h1 {
     font-size: 24px;
     font-weight: bold;
     color: #333;
 }
 
-/* Navbar Styling */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -55,31 +49,28 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;  /* Default text color */
+    color: #333;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: color 0.3s ease;  /* Smooth transition for color change */
+    transition: color 0.3s ease;
 }
 
-/* Hover Effect for Navbar Links */
 nav ul li a:hover {
-    color: #9e5008;  /* Change color when mouse pointer hovers */
+    color: #9e5008;
 }
 
-/* Home link specific color */
 .home-link {
-    color: #FF6347; /* Change this to any color you like */
+    color: #FF6347;
 }
 
 .home-link:hover {
-    color: #FF6347; /* You can add a hover effect as well */
+    color: #FF6347;
 }
 
-/* Hero section */
 .hero {
     position: relative;
-    background-image: url('photos/face.jpg'); /* Reference to your uploaded image */
+    background-image: url('photos/face.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -88,10 +79,9 @@ nav ul li a:hover {
     align-items: center;
     color: #fff;
     text-align: center;
-    margin-bottom: 0; /* Remove the default margin */
+    margin-bottom: 0;
 }
 
-/* Adding an orange overlay */
 .hero::before {
     content: "";
     position: absolute;
@@ -99,15 +89,15 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.67); /* Orange color with transparency */
-    z-index: 1; /* Overlay sits above the image but below the text */
+    background-color: rgba(0, 0, 0, 0.67);
+    z-index: 1;
 }
 
 .hero-text {
     max-width: 800px;
     padding: 20px;
-    position: relative; /* Ensures text stays on top of the overlay */
-    z-index: 2; /* Ensures text appears above the overlay */
+    position: relative;
+    z-index: 2;
 }
 
 .hero-text h1 {
@@ -121,38 +111,36 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* Button styles for transparent background and border */
 .cta-buttons {
     display: flex;
-    justify-content: center;  /* Centering the buttons */
-    gap: 15px;  /* Adds space between the buttons */
+    justify-content: center;
+    gap: 15px;
 }
 
 .cta-buttons .btn {
     padding: 12px 30px;
     font-size: 16px;
     font-weight: bold;
-    border: 2px solid #fff;  /* White border */
-    background-color: transparent;  /* Transparent background */
-    color: #fff;  /* White text color */
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-buttons .continue:hover,
 .cta-buttons .explore:hover {
-    background-color: #fff;  /* On hover, make the background white */
-    color: #333;  /* On hover, change text color to dark */
+    background-color: #fff;
+    color: #333;
 }
 
-/* Specific button styles for each button */
 .cta-buttons .continue {
-    border-color: #333;  /* Dark border for continue button */
+    border-color: #333;
 }
 
 .cta-buttons .explore {
-    border-color: #f8b400;  /* Orange border for explore button */
+    border-color: #f8b400;
 }
 
 .cta-buttons .explore:hover {
@@ -165,83 +153,77 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* History Section (second layout) */
 .history-section {
     display: flex;
-    justify-content: flex-start;  /* Align items to the left */
-    align-items: flex-start;  /* Align image and text to the top */
-    padding: 50px;  /* Increased padding to make the section larger */
-    padding-bottom: 150px;  /* Add padding to the bottom for space */
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color to contrast with the black background */
-    margin-top: 0; /* Ensure there's no unwanted space */
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px;
+    padding-bottom: 150px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 0;
     margin-bottom: 100px;
-    width: 100%; /* Ensure full width */
+    width: 100%;
 }
 
-/* Styling for the left image */
 .history-image img {
-    width: 90%;  /* Set the width of the image to 80% of its container */
+    width: 90%;
     height: auto;
-    border-radius: 20px;  /* Remove the border-radius */
-    margin-right: 10px;  /* Small space between the image and text */
-    margin-top: 100px;  /* Add margin-top to create space above the image */
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 100px;
 }
 
-/* Styling for the right text */
 .history-text {
-    padding-left: 0;  /* Remove left padding */
-    margin-left: 0;   /* Remove left margin */
-    max-width: 50%;    /* Limit text width */
-    margin-top: 100px;  /* Add margin-top to create space above the text */
+    padding-left: 0;
+    margin-left: 0;
+    max-width: 50%;
+    margin-top: 100px;
 }
 
 .history-text h2 {
     font-size: 50px;
     font-weight: bold;
-    margin-bottom: 10px;  /* Reduced margin to bring the heading closer */
+    margin-bottom: 10px;
 }
 
 .history-text p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 10px;
-    margin-top: 40px;  /* Reduced margin */
+    margin-top: 40px;
 }
 
 .history-text h3 {
     font-size: 24px;
-    margin-bottom: 10px;  /* Reduced margin */
+    margin-bottom: 10px;
 }
 
 .history-text ul {
     list-style-type: none;
-    padding-left: 0;  /* Remove padding from the list */
+    padding-left: 0;
 }
 
 .history-text ul li {
     font-size: 18px;
-    margin-bottom: 5px;  /* Reduced margin */
+    margin-bottom: 5px;
 }
 
-/* Unified Background for Both Sections */
 body {
-    background-image: url('photos/bgbukid.jpg'); /* Set the background image */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the background image */
-    background-attachment: fixed; /* Keeps the image fixed during scrolling */
-    transform: rotate(0deg); /* Ensure no rotation happens */
+    background-image: url('photos/bgbukid.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transform: rotate(0deg);
 }
 
-/* Gallery Section */
 .gallery-section {
     padding: 50px;
-    color: #fff; /* White text to contrast with the image */
+    color: #fff;
     text-align: center;
-    margin-top: 0;  /* No margin at the top to make it seamless with the next section */
+    margin-top: 0;
 }
 
-/* Gallery heading */
 .gallery-section h2 {
     font-size: 50px;
     margin-top: 150px;
@@ -253,47 +235,25 @@ body {
     margin-bottom: 100px;
 }
 
-/* Gallery Section */
-.gallery-section {
-    padding: 50px;
-    color: #fff; /* White text to contrast with the image */
-    text-align: center;
-    margin-top: 0;  /* No margin at the top to make it seamless with the next section */
-}
-
-/* Gallery heading */
-.gallery-section h2 {
-    font-size: 50px;
-    margin-top: 150px;
-    margin-bottom: 20px;
-}
-
-.gallery-section p {
-    font-size: 18px;
-    margin-bottom: 100px;
-}
-
-/* Gallery container */
 .gallery-container {
     position: relative;
     max-width: 90%;
-    margin: 0 auto; /* Centers the gallery within the container */
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .gallery {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Space between gallery items */
-    margin-bottom: 40px; /* Space below the gallery */
-    max-width: 100%; /* Ensures the gallery is centered and not too wide */
+    gap: 20px;
+    margin-bottom: 40px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-/* Gallery item styling */
 .gallery-item {
     position: relative;
-    width: 30%;  /* Each item takes up 30% of the container */
+    width: 30%;
     background-color: #000;
     border-radius: 8px;
     overflow: hidden;
@@ -304,7 +264,6 @@ body {
     height: auto;
 }
 
-/* Gallery Overlay text */
 .gallery-overlay {
     position: absolute;
     bottom: 0;
@@ -312,9 +271,9 @@ body {
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 5px 10px;  /* Reduced padding to decrease space */
+    padding: 5px 10px;
     text-align: center;
-    box-sizing: border-box; /* Include padding in height calculation */
+    box-sizing: border-box;
 }
 
 .gallery-overlay h3 {
@@ -324,98 +283,24 @@ body {
 
 .gallery-overlay p {
     font-size: 16px;
-    margin-bottom: 5px;  /* Reduced margin-bottom to decrease space */
+    margin-bottom: 5px;
 }
 
-/* Gallery Item Hover Effect */
 .gallery-item:hover {
-    transform: scale(1.05);  /* Slightly scale up the item */
-    transition: transform 0.3s ease;  /* Smooth transition */
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
-/* Gallery Overlay on hover */
 .gallery-item:hover .gallery-overlay {
-    background-color: rgba(0, 0, 0, 0.85);  /* Make overlay darker */
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* Gallery Text Color Change on hover */
 .gallery-item:hover .gallery-overlay h3,
 .gallery-item:hover .gallery-overlay p {
-    color: #FF6347;  /* Change text color to orange on hover */
+    color: #FF6347;
 }
 
-/* Buttons (Prev and Next) */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* See More Button Styling */
 .see-more-button {
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border: 2px solid #fff;  /* White border */
-    background-color: transparent;  /* Transparent background */
-    color: #fff;  /* White text color */
-    cursor: pointer;
-    border-radius: 25px;  /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-top: 30px; /* Space above the button */
-    display: block; /* Makes the button a block-level element */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-}
-
-/* Mindanao Section Styling */
-.mindanao-section {
-    padding: 50px;
-    color: #fff; /* White text to contrast with the image */
-    text-align: left; /* Align text to the left */
-    margin-top: 0;  /* Remove margin-top to make it part of the same section */
-    max-width: 80%;  /* Limit the width to make the content more compact */
-    margin: 0 auto;  /* Center the content horizontally */
-    display: flex;
-    flex-direction: column; /* Align content vertically */
-}
-
-/* Mindanao Section Heading */
-.mindanao-section h2 {
-    font-size: 68px;  /* Increased font size for a bigger heading */
-    margin-bottom: 20px;  /* Space below the heading */
-    font-weight: bold;  /* Make the heading bold */
-    margin-top: 430px;
-}
-
-/* Mindanao Section Paragraph */
-.mindanao-section p {
-    font-size: 20px;  /* Slightly larger font size for the paragraph */
-    margin-top: 0; 
-    margin-bottom: 30px;  /* Space below the paragraph */
-}
-
-/* Explore Mindanao Button Styling */
-.explore-mindanao-button {
     padding: 12px 30px;
     font-size: 16px;
     font-weight: bold;
@@ -425,124 +310,42 @@ body {
     cursor: pointer;
     border-radius: 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-top: 20px;  /* Reduced margin-top to place the button closer to the text */
-    align-self: flex-end; /* Align the button to the right */
-    margin-bottom: 430px;
-}
-
-.explore-mindanao-button:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-links {
-    margin-top: 10px;
-}
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-
-/* See More Button Styling */
-.see-more-button {
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border: 2px solid #fff;  /* White border */
-    background-color: transparent;  /* Transparent background */
-    color: #fff;  /* White text color */
-    cursor: pointer;
-    border-radius: 25px;  /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-top: 70px;
-    display: inline-block;
-    text-align: center;
-}
-
-/* Center the See More button */
-.see-more-button {
-    text-align: center;
-    margin: 30px auto 50px;
+    margin-top: 30px;
     display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Buttons */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+.see-more-button:hover {
+    background-color: #000;
     color: #fff;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
 }
 
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Mindanao Section Styling */
 .mindanao-section {
     padding: 50px;
-    color: #fff; /* White text to contrast with the image */
-    text-align: left; /* Align text to the left */
-    margin-top: 0;  /* Remove margin-top to make it part of the same section */
-    max-width: 80%;  /* Limit the width to make the content more compact */
-    margin: 0 auto;  /* Center the content horizontally */
+    color: #fff;
+    text-align: left;
+    margin-top: 0;
+    max-width: 80%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Align content vertically */
+    flex-direction: column;
 }
 
-/* Mindanao Section Heading */
 .mindanao-section h2 {
-    font-size: 68px;  /* Increased font size for a bigger heading */
-    margin-bottom: 20px;  /* Space below the heading */
-    font-weight: bold;  /* Make the heading bold */
+    font-size: 68px;
+    margin-bottom: 20px;
+    font-weight: bold;
     margin-top: 430px;
 }
 
-/* Mindanao Section Paragraph */
 .mindanao-section p {
-    font-size: 20px;  /* Slightly larger font size for the paragraph */
-    margin-top: 0; 
-    margin-bottom: 30px;  /* Space below the paragraph */
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
-/* Explore Mindanao Button Styling */
 .explore-mindanao-button {
     padding: 12px 30px;
     font-size: 16px;
@@ -553,8 +356,8 @@ footer {
     cursor: pointer;
     border-radius: 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-top: 20px;  /* Reduced margin-top to place the button closer to the text */
-    align-self: flex-end; /* Align the button to the right */
+    margin-top: 20px;
+    align-self: flex-end;
     margin-bottom: 430px;
 }
 
@@ -563,7 +366,6 @@ footer {
     color: #fff;
 }
 
-/* Footer Styling */
 footer {
     background-color: #000;
     color: #fff;

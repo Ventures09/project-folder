@@ -1,4 +1,4 @@
-/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,19 +7,19 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('photos/bgbukid.jpg'); /* Set the background image */
-    background-size: cover; /* Ensure the image covers the entire body */
-    background-position: center; /* Center the background image */
-    background-attachment: fixed; /* Fix the background during scroll */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Arrange elements in a column */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center; /* Center the content horizontally */
-    height: 100vh; /* Ensure the body takes up full height of the screen */
-    color: #fff; /* White text color */
+    background-image: url('photos/bgbukid.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    color: #fff; 
 }
 
-/* Header styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -32,26 +32,26 @@ header {
     z-index: 10;
 }
 
-/* Logo and text container */
+
 .logo-container {
     display: flex;
     align-items: center;
 }
 
-/* Styling for the logo */
+
 .logo img {
     height: 50px;
-    margin-right: 15px; /* Space between the logo and the text */
+    margin-right: 15px; 
 }
 
-/* Styling for the logo text */
+
 .logo-text h1 {
     font-size: 24px;
     font-weight: bold;
     color: #333;
 }
 
-/* Navbar Styling */
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -63,28 +63,28 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;  /* Default text color */
+    color: #333;  
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: color 0.3s ease;  /* Smooth transition for color change */
+    transition: color 0.3s ease;  
 }
 
-/* Specific color for the About link */
+
 .artifacts-link {
-    color: #FF6347; /* Orange color for the About link */
+    color: #FF6347; 
 }
 
 .artifacts-link:hover {
-    color: #FF8C00; /* Darker orange when hovered */
+    color: #FF8C00; 
 }
 
-/* Hover Effect for Navbar Links */
+
 nav ul li a:hover {
-    color: #9e5008;  /* Change color when mouse pointer hovers */
+    color: #9e5008;  
 }
 
-/* Hero section */
+
 .hero {
     position: relative;
     height: 100vh;
@@ -94,28 +94,28 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Hero text */
+
 .hero-text {
     max-width: 800px;
     padding: 20px;
-    position: relative; /* Ensures text stays on top of the overlay */
-    z-index: 2; /* Ensures text appears above the overlay */
+    position: relative; 
+    z-index: 2; 
 }
 
 .hero-text h1 {
-    font-size: 40px; /* Reduced font size */
+    font-size: 40px; 
     font-weight: bold;
     margin-bottom: 20px;
-    color: #FFA500;  /* Orange color for the heading */
+    color: #FFA500;  
 }
 
 .hero-text p {
     font-size: 20px;
     margin-bottom: 30px;
-    color: #FF8C00;  /* Darker orange for paragraph text */
+    color: #FF8C00;  
 }
 
-/* Gallery Section Styling */
+
 .gallery-section {
     padding: 50px;
     color: #fff;
@@ -123,8 +123,8 @@ nav ul li a:hover {
 }
 
 .gallery-section h2 {
-    font-size: 70px;  /* Increased font size */
-    margin-top: 100px;  /* Increased margin-top */
+    font-size: 70px;  
+    margin-top: 100px; 
     margin-bottom: 0px;
 }
 
@@ -133,35 +133,35 @@ nav ul li a:hover {
     margin-bottom: 50px;
 }
 
-/* Gallery Layout */
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px; /* Space between the items */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
     max-width: 90%;
     margin: 0 auto;
 }
 
-/* Gallery Item Styling */
+
 .gallery-item {
     position: relative;
     background-color: #000;
     border-radius: 8px;
     overflow: hidden;
-    display: flex; /* Flexbox to align contents */
-    flex-direction: column; /* Ensure text and image stack properly */
-    justify-content: flex-end; /* Push the overlay to the bottom */
-    width: 100%; /* Ensure item takes full width */
-    height: 100%; /* Ensure item takes full height */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    width: 100%; 
+    height: 100%;
 }
 
 .gallery-item img {
-    width: 100%; /* Ensure image takes full width of the container */
-    height: 100%; /* Ensure image takes full height of the container */
-    object-fit: cover;  /* Ensures image covers entire item without distortion */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;  
 }
 
-/* Gallery Overlay text */
+
 .gallery-overlay {
     position: absolute;
     bottom: 0;
@@ -169,9 +169,9 @@ nav ul li a:hover {
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 5px 10px;  /* Reduced padding to decrease space */
+    padding: 5px 10px;  
     text-align: center;
-    box-sizing: border-box; /* Include padding in height calculation */
+    box-sizing: border-box; 
 }
 
 .gallery-overlay h3 {
@@ -181,28 +181,28 @@ nav ul li a:hover {
 
 .gallery-overlay p {
     font-size: 16px;
-    margin-bottom: 5px;  /* Reduced margin-bottom to decrease space */
+    margin-bottom: 5px; 
 }
 
-/* Gallery Item Hover Effect */
+
 .gallery-item:hover {
-    transform: scale(1.05);  /* Slightly scale up the item */
-    transition: transform 0.3s ease;  /* Smooth transition */
+    transform: scale(1.05);  
+    transition: transform 0.3s ease;  
 }
 
-/* Gallery Overlay on hover */
+
 .gallery-item:hover .gallery-overlay {
-    background-color: rgba(0, 0, 0, 0.85);  /* Make overlay darker */
+    background-color: rgba(0, 0, 0, 0.85); 
 }
 
-/* Gallery Text Color Change on hover */
+
 .gallery-item:hover .gallery-overlay h3,
 .gallery-item:hover .gallery-overlay p {
-    color: #FF6347;  /* Change text color to orange on hover */
+    color: #FF6347; 
 }
 
 
-/* Footer Styling */
+
 footer {
     background-color: #000;
     color: #fff;

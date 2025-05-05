@@ -1,4 +1,4 @@
-/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;  /* Set the body background to black */
-    color: #fff;  /* White text color */
+    background-color: #000;  
+    color: #fff;  
 }
 
-/* Header styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -24,26 +24,26 @@ header {
     z-index: 10;
 }
 
-/* Logo and text container */
+
 .logo-container {
     display: flex;
     align-items: center;
 }
 
-/* Styling for the logo */
+
 .logo img {
     height: 50px;
-    margin-right: 15px; /* Space between the logo and the text */
+    margin-right: 15px; 
 }
 
-/* Styling for the logo text */
+
 .logo-text h1 {
     font-size: 24px;
     font-weight: bold;
     color: #333;
 }
 
-/* Navbar Styling */
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -55,31 +55,31 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;  /* Default text color */
+    color: #333;  
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: color 0.3s ease;  /* Smooth transition for color change */
+    transition: color 0.3s ease;  
 }
 
-/* Specific color for the About link */
+
 .about-link {
-    color: #FF6347; /* Orange color for the About link */
+    color: #FF6347; 
 }
 
 .about-link:hover {
-    color: #FF8C00; /* Darker orange when hovered */
+    color: #FF8C00; 
 }
 
-/* Hover Effect for Navbar Links */
+
 nav ul li a:hover {
-    color: #9e5008;  /* Change color when mouse pointer hovers */
+    color: #9e5008;  
 }
 
-/* Hero section */
+
 .hero {
     position: relative;
-    background-image: url('photos/face.jpg'); /* Reference to your uploaded image */
+    background-image: url('photos/face.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -88,10 +88,10 @@ nav ul li a:hover {
     align-items: center;
     color: #fff;
     text-align: center;
-    margin-bottom: 0; /* Remove the default margin */
+    margin-bottom: 0; 
 }
 
-/* Adding an orange overlay */
+
 .hero::before {
     content: "";
     position: absolute;
@@ -99,33 +99,33 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.67); /* Dark overlay */
-    z-index: 1; /* Overlay sits above the image but below the text */
+    background-color: rgba(0, 0, 0, 0.67); 
+    z-index: 1; 
 }
 
 .hero-text {
     max-width: 800px;
     padding: 20px;
-    position: relative; /* Ensures text stays on top of the overlay */
-    z-index: 2; /* Ensures text appears above the overlay */
+    position: relative; 
+    z-index: 2; 
 }
 
 .hero-text h1 {
-    font-size: 100px; /* Reduced font size */
+    font-size: 100px; 
     font-weight: bold;
     margin-bottom: 20px;
-    color: #ffffff;  /* Orange color for the heading */
+    color: #ffffff;  
 }
 
 .hero-text p {
-    font-size: 20px;  /* Increased font size */
+    font-size: 20px; 
     margin-bottom: 30px;
-    color: #ffffff;  /* Darker orange for paragraph text */
-    line-height: 1.6; /* Increased line height for readability */
+    color: #ffffff;  
+    line-height: 1.6; 
 }
 
 
-/* Footer Styling */
+
 footer {
     background-color: #000;
     color: #fff;

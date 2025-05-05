@@ -7,31 +7,31 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: flex-start;  /* Align the login box to the left */
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    background-image: url('photos/mindanart.jpg'); /* Path to your image */
+    background-image: url('photos/mindanart.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .login-container {
     display: flex;
-    justify-content: flex-start;  /* Ensure the login form is left-aligned */
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
-    width: 50%; /* Controls the width of the form container */
-    padding-left: 110px; /* Adds space between the form and the left side */
+    width: 50%;
+    padding-left: 110px;
 }
 
 .login-box {
     background: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 60px; /* Padding inside the form */
+    padding: 60px;
     border-radius: 8px;
     text-align: center;
-    width: 600px; /* Keeps the width of the form container */
-    height: 600px; /* Keeps the height of the form container */
+    width: 600px;
+    height: 600px;
 }
 
 .header {
@@ -42,18 +42,18 @@ body {
 }
 
 .header .logo {
-    width: 30px; /* Size of the logo */
+    width: 30px;
     height: 30px;
     margin-right: 10px;
 }
 
 .header h2 {
-    font-size: 24px; /* Font size of the title */
+    font-size: 24px;
     margin: 0;
 }
 
 h1 {
-    margin-bottom: 40px; /* Margin between the title and the form fields */
+    margin-bottom: 40px;
 }
 
 .form-container {
@@ -70,23 +70,23 @@ h1 {
 
 .textbox,
 .textboxx {
-    margin-bottom: 15px; /* Margin between the input fields */
+    margin-bottom: 15px;
 }
 
 .textbox input,
 .textboxx input {
-    width: 80%; /* Decreased width of the input fields */
-    padding: 12px; /* Decreased padding inside the input fields */
+    width: 80%;
+    padding: 12px;
     border-radius: 5px;
     border: none;
     background: #fff;
     color: #000;
-    font-size: 16px; /* Decreased font size for the input fields */
+    font-size: 16px;
 }
 
 .forgot {
     text-align: right;
-    margin-bottom: 45px; /* Margin between the forgot link and button */
+    margin-bottom: 45px;
     margin-right: 50px;
     margin-top: -5px;
     font-size: 15px;
@@ -98,12 +98,12 @@ h1 {
 }
 
 .login-btn button {
-    width: 80%; /* Decreased width of the button */
-    padding: 12px; /* Decreased padding for the button */
+    width: 80%;
+    padding: 12px;
     background-color: #4CAF50;
     border: none;
     color: white;
-    font-size: 18px; /* Decreased font size for the button */
+    font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -113,7 +113,7 @@ h1 {
 }
 
 .register {
-    margin-top: 30px; /* Margin between the registration link and the rest */
+    margin-top: 30px;
 }
 
 .register a {
@@ -129,10 +129,8 @@ h1 {
     cursor: pointer;
 }
 
-/* Transition and slide effect */
 .form-container {
     position: relative;
     display: flex;
     transition: transform 0.5s ease;
 }
-
