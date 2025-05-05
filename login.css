@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-start;  /* Align the login box to the left */
+    align-items: center;
+    height: 100vh;
+    background-image: url('photos/mindanart.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: flex-start;  /* Ensure the login form is left-aligned */
+    align-items: center;
+    height: 100%;
+    width: 50%; /* Controls the width of the form container */
+    padding-left: 110px; /* Adds space between the form and the left side */
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 60px; /* Padding inside the form */
+    border-radius: 8px;
+    text-align: center;
+    width: 600px; /* Keeps the width of the form container */
+    height: 600px; /* Keeps the height of the form container */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-left: 90px;
+}
+
+.header .logo {
+    width: 30px; /* Size of the logo */
+    height: 30px;
+    margin-right: 10px;
+}
+
+.header h2 {
+    font-size: 24px; /* Font size of the title */
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 40px; /* Margin between the title and the form fields */
+}
+
+.form-container {
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textbox,
+.textboxx {
+    margin-bottom: 15px; /* Margin between the input fields */
+}
+
+.textbox input,
+.textboxx input {
+    width: 80%; /* Decreased width of the input fields */
+    padding: 12px; /* Decreased padding inside the input fields */
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 16px; /* Decreased font size for the input fields */
+}
+
+.forgot {
+    text-align: right;
+    margin-bottom: 45px; /* Margin between the forgot link and button */
+    margin-right: 50px;
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+.forgot a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-btn button {
+    width: 80%; /* Decreased width of the button */
+    padding: 12px; /* Decreased padding for the button */
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 18px; /* Decreased font size for the button */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn button:hover {
+    background-color: #45a049;
+}
+
+.register {
+    margin-top: 30px; /* Margin between the registration link and the rest */
+}
+
+.register a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#toggle-text {
+    font-size: 14px;
+}
+
+#toggle-form {
+    cursor: pointer;
+}
+
+/* Transition and slide effect */
+.form-container {
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+

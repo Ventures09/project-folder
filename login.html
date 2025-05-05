@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <!-- Header with logo -->
+            <div class="header">
+                <img src="photos/artifact.png" alt="Logo" class="logo">
+                <h2>TIMELESS TREASURES</h2>
+            </div>
+            <h1 id="form-title">Login your Account</h1>
+            <div class="form-container" id="form-container">
+                <!-- Login form -->
+                <form id="login-form" class="form">
+                    <div class="textbox">
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="textboxx">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                    <div class="login-btn">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+
+                <!-- Signup form (hidden initially) -->
+                <form id="signup-form" class="form" style="display: none;">
+                    <div class="textbox">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="textboxx">
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="textboxx">
+                        <input type="password" placeholder="Confirm Password" name="confirm-password" required>
+                    </div>
+                    <div class="login-btn">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="register">
+                <p id="toggle-text">Don't have an Account? <a href="#" id="toggle-form">Sign up here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

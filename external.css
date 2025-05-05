@@ -1,0 +1,396 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;  /* Set the body background to black */
+    color: #fff;  /* White text color */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    position: fixed;  /* Keep the navbar fixed */
+    top: 0;  /* Position it at the top of the page */
+    width: 100%;  /* Make sure it spans across the entire width */
+    z-index: 10;  /* Ensure it's above other content */
+}
+
+/* Logo and text container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the logo */
+.logo img {
+    height: 50px;
+    margin-right: 15px; /* Space between the logo and the text */
+}
+
+/* Styling for the logo text */
+.logo-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navbar Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;  /* Default text color */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;  /* Smooth transition for color change */
+}
+
+/* Hover Effect for Navbar Links */
+nav ul li a:hover {
+    color: #9e5008;  /* Change color when mouse pointer hovers */
+}
+
+
+/* Hero section */
+.hero {
+    position: relative;
+    background-image: url('photos/face.jpg'); /* Reference to your uploaded image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0; /* Remove the default margin */
+}
+
+/* Adding an orange overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.67); /* Orange color with transparency */
+    z-index: 1; /* Overlay sits above the image but below the text */
+}
+
+.hero-text {
+    max-width: 800px;
+    padding: 20px;
+    position: relative; /* Ensures text stays on top of the overlay */
+    z-index: 2; /* Ensures text appears above the overlay */
+}
+
+.hero-text h1 {
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Button styles for transparent background and border */
+.cta-buttons {
+    display: flex;
+    justify-content: center;  /* Centering the buttons */
+    gap: 15px;  /* Adds space between the buttons */
+}
+
+.cta-buttons .btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #fff;  /* White border */
+    background-color: transparent;  /* Transparent background */
+    color: #fff;  /* White text color */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.cta-buttons .continue:hover,
+.cta-buttons .explore:hover {
+    background-color: #fff;  /* On hover, make the background white */
+    color: #333;  /* On hover, change text color to dark */
+}
+
+/* Specific button styles for each button */
+.cta-buttons .continue {
+    border-color: #333;  /* Dark border for continue button */
+}
+
+.cta-buttons .explore {
+    border-color: #f8b400;  /* Orange border for explore button */
+}
+
+.cta-buttons .explore:hover {
+    background-color: #f8b400;
+    color: #fff;
+}
+
+.cta-buttons .continue:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* History Section (second layout) */
+.history-section {
+    display: flex;
+    justify-content: flex-start;  /* Align items to the left */
+    align-items: flex-start;  /* Align image and text to the top */
+    padding: 50px;  /* Increased padding to make the section larger */
+    padding-bottom: 150px;  /* Add padding to the bottom for space */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color to contrast with the black background */
+    margin-top: 0; /* Ensure there's no unwanted space */
+    margin-bottom: 100px;
+    width: 100%; /* Ensure full width */
+}
+
+/* Styling for the left image */
+.history-image img {
+    width: 90%;  /* Set the width of the image to 80% of its container */
+    height: auto;
+    border-radius: 20px;  /* Remove the border-radius */
+    margin-right: 10px;  /* Small space between the image and text */
+    margin-top: 100px;  /* Add margin-top to create space above the image */
+}
+
+/* Styling for the right text */
+.history-text {
+    padding-left: 0;  /* Remove left padding */
+    margin-left: 0;   /* Remove left margin */
+    max-width: 50%;    /* Limit text width */
+    margin-top: 100px;  /* Add margin-top to create space above the text */
+}
+
+.history-text h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;  /* Reduced margin to bring the heading closer */
+}
+
+.history-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-top: 40px;  /* Reduced margin */
+}
+
+.history-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;  /* Reduced margin */
+}
+
+.history-text ul {
+    list-style-type: none;
+    padding-left: 0;  /* Remove padding from the list */
+}
+
+.history-text ul li {
+    font-size: 18px;
+    margin-bottom: 5px;  /* Reduced margin */
+}
+
+
+/* Unified Background for Both Sections */
+body {
+    background-image: url('photos/bgbukid.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    transform: rotate(0deg); /* Ensure no rotation happens */
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 50px;
+    color: #fff; /* White text to contrast with the image */
+    text-align: center;
+    margin-top: 0;  /* No margin at the top to make it seamless with the next section */
+}
+
+/* Gallery heading */
+.gallery-section h2 {
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.gallery-section p {
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+/* Gallery container */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between gallery items */
+    margin-bottom: 40px; /* Space below the gallery */
+    max-width: 90%; /* Ensure the gallery is centered and not too wide */
+    margin: 0 auto;
+}
+
+/* Gallery item styling */
+.gallery-item {
+    position: relative;
+    width: 30%;  /* Each item takes up 30% of the container */
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay for text */
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);  /* Dark background for text */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-overlay h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.gallery-overlay p {
+    font-size: 14px;
+}
+
+/* See More Button Styling */
+.see-more-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #fff;  /* White border */
+    background-color: transparent;  /* Transparent background */
+    color: #fff;  /* White text color */
+    cursor: pointer;
+    border-radius: 25px;  /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 70px;
+}
+
+.see-more-button:hover {
+    background-color: #000;  /* On hover, make the background black */
+    color: #fff;  /* On hover, change text color to white */
+}
+
+/* Mindanao Section Styling */
+.mindanao-section {
+    padding: 50px;
+    color: #fff; /* White text to contrast with the image */
+    text-align: left; /* Align text to the left */
+    margin-top: 0;  /* Remove margin-top to make it part of the same section */
+    max-width: 80%;  /* Limit the width to make the content more compact */
+    margin: 0 auto;  /* Center the content horizontally */
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+}
+
+/* Mindanao Section Heading */
+.mindanao-section h2 {
+    font-size: 68px;  /* Increased font size for a bigger heading */
+    margin-bottom: 20px;  /* Space below the heading */
+    font-weight: bold;  /* Make the heading bold */
+    margin-top: 430px;
+}
+
+/* Mindanao Section Paragraph */
+.mindanao-section p {
+    font-size: 20px;  /* Slightly larger font size for the paragraph */
+    margin-top: 0; 
+    margin-bottom: 30px;  /* Space below the paragraph */
+}
+
+/* Explore Mindanao Button Styling */
+.explore-mindanao-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;  /* Reduced margin-top to place the button closer to the text */
+    align-self: flex-end; /* Align the button to the right */
+    margin-bottom: 430px;
+}
+
+.explore-mindanao-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
